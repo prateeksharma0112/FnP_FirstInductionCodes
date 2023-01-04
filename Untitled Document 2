@@ -1,0 +1,151 @@
+  /*         function PrintInputdata(){
+           	
+           	// To Prevent the default Behaviour
+           		event.preventDefault();
+
+           	
+           	// Define a value numberofblocks and take it initial value from form, and incremnet it by 1
+           	const numberOfBlocks = parseInt(document.forms[0].elements.numberOfBlocks.value);
+      		document.forms[0].elements.numberOfBlocks.value = numberOfBlocks + 1;
+           	
+           	// Define Values
+           	let fullname = document.getElementById("Name").value;
+           	let gender = document.forms["form"].Gender.value;
+           		let day = document.getElementById("day").value;
+			let month = document.getElementById("month").value;
+	        	let year = document.getElementById("year").value;
+           	let dob = day+" "+month+" "+year;
+           	let fruitslist = [];
+           		let fruits = document.getElementsByName("fruits");
+			for(let i = 0; i < fruits.length; i++){
+			 	if(fruits[i].selected){
+			 	       fruitslist.push(fruits[i].value);
+			        }
+			}	
+           	let foodlist = [];
+           		let food = document.getElementsByName("food");
+			for(let i = 0; i < food.length; i++){
+				if(food[i].checked){
+				     foodlist.push(food[i].value);
+				}
+		}
+		let fewwords = document.getElementById("suggestion").value;
+			
+           	// Create Object 
+           	
+           	FormsObject[`Form_${formNumber}`] = {      
+           		name : fullname,
+           		gender : gender,
+           		dob : dob,
+           		favouritefruits : fruitslist, 
+           		favouritefood : foodlist,
+           		fewwords : fewwords,
+           	//	id : formNumber
+           	};
+           	
+           	// Create Output Form Block and send numberofblocks as parameter
+	      	
+	      	CreateOutputFormBlock(FormsObject, formNumber, numberOfBlocks);
+	      	
+	      	// Increment the FormNumber By 1     
+	        
+	        formNumber++;
+	       	
+	       	// To reset the Form After Submission
+			document.forms["form"].reset(); 	
+           	
+           }; */
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

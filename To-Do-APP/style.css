@@ -1,0 +1,32 @@
+section{
+    border:5px solid bisque;
+    width: 700px;
+    margin: 60px auto;
+    border-radius: 10px;
+    background-image: url(https://images.unsplash.com/photo-1514782831304-632d84503f6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80);
+    opacity: 0.7;
+}
+#inp{
+    border: 2px solid burlywood;
+    border-radius: 10px;
+    margin: 20px 10px 20px 170px ;
+    background-color: bisque;
+    text-align: center;
+    text-decoration-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    outline: none;
+    
+}
+#btn{
+    border: 1px solid azure;
+    background-color: azure;
+    border-radius: 10px;
+    
+    font-size: 25px;
+    color: palegreen;
+    outline: none;
+}
+body{
+    background-image: url(https://cdn1.vectorstock.com/i/1000x1000/13/40/todo-list-seamless-pattern-universal-background-vector-7561340.jpg);
+}

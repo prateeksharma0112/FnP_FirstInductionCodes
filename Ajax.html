@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Prateek Kumar Sharma" />
+	<meta name="keywords" content="Ajax, API, Prateek, HTML" />
+	<meta name="description"
+		content="This is a Sample form Prepared By Prateek. He is Currently working as a ASE-Trainee in FnP" />
+	<meta name="revised" content="Make API call, Ajax (9.0.0)" />
+	<!--<meta http-equiv = "refresh" content = "60"/>  Just to refresh our page after every 60 seconds -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Prateek-sharma-Form</title>
+</head>
+
+<body>
+	<p> AJAX (Making API CALL), I'm using xmlHTTPRequest </p>
+	<div id="container"></div>
+	<script>
+		// Created a object 
+		let object = new XMLHttpRequest();
+
+		// Open a request
+		object.open("GET", "https://jsonplaceholder.typicode.com/posts");
+
+		// Send a request
+		object.send();
+
+		// Added event listener i.e onload to print it on screen and console
+		object.onload = function () {
+
+			console.log(object.responseText);
+			document.getElementById("container").innerText = object.responseText;
+
+		};	
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+     <meta charset="utf-8" />
+     <meta name="author" content="Prateek Kumar Sharma" />
+     <meta name="keywords" content="Var, Let, Variables, Loops" />
+     <meta name="description" content="This is a Simlple Javascript Program" />
+     <meta name="revised" content="Javascript-Programming v-7.1.0" />
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <title>Prateek-sharma-JavaScript</title>
+</head>
+
+<body>
+     <h1>JavaScript Sample Code</h1>
+     <!-- This is my question I recieved in Assignment -->
+     <p>Write a function which accepts three sides of a triangle and prints if the triangle is acute, obtuse or right
+          angle triangle.</p>
+
+
+     <!--  (This is my logic to know about type of triangle )
+             For acute-angled triangle, c^2 < a^2 + b^2
+             For Obtuse-angled triangle, c^2 > a^2 + b^2 
+             For Right angle triangle,  c^2 = a^2 + b^2    -->
+     <script>
+          // This function will print output on console, just to check
+          function Print(output) {
+               console.log(output);
+          };
+          // This is my main function to evaluate the type of function 
+          function triangletype(x, y, z) {  // Function definition, and passing three parameters i.e (x,y,z) these are the three sides of triangle
+               let a = x * x;
+               let b = y * y;
+               let c = z * z;
+
+               if (a == b + c || b == a + c || c == a + b)
+                    Print("Right-Angled-Triangle");     // Print Function Call for output
+               else if (a > b + c || b > a + c || c > a + b)
+                    Print("Obtuse-Angled-Triangle");    // Print Function Call for output
+               else
+                    Print("Acute-Angled-Triangle");     // Print Function Call for output
+          };
+          // This is my three sample function call, Just to check 
+          triangletype(3, 4, 5);
+          triangletype(6, 8, 9);
+          triangletype(4, 3, 1);
+     </script>
+</body>
+
+</html>

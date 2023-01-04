@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Prateek Kumar Sharma" />
+	<meta name="keywords" content="Form, Feedback, Prateek, HTML, CSS, Javascript" />
+	<meta name="description"
+		content="This is a Sample form Prepared to store data and print it on screen. He is Currently working as a ASE-Trainee in FnP" />
+	<meta name="revised" content="Form Version (8.1.0) Modified on 11st August 2022" />
+	<!--<meta http-equiv = "refresh" content = "60"/>  Just to refresh our page after every 60 seconds I know that in form it is not required but i use just to explore -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Prateek-sharma-Form</title>
+	<style>
+		.left-span {
+			display: inline-block;
+			text-align: right;
+			width: 150px;
+			line-height: 2.3;
+		}
+
+		.edit-delete-span {
+			float: right;
+			margin: 6px auto;
+		}
+
+		#Output-form-container {
+			width: 500px;
+		}
+
+		.right-span {
+			margin-left: 5px;
+		}
+
+		.block-div {
+			border: 1px solid black;
+			margin: 20px auto;
+		}
+
+		.edit-anchor,
+		.delete-anchor {
+			margin-right: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<form action="#" method="get" id="form">
+		<input type="hidden" value="0" name="numberOfBlocks" />
+		<input type="hidden" value="" name="whichBlock" />
+		<h3>Please Share Your Feedback: </h3>
+		<div>
+			<span class="left-span">
+				<label for="Name">Name: </label>
+			</span>
+			<span class="right-span">
+				<input type="text" name="Name" id="Name" required />
+			</span>
+		</div>
+		<div>
+			<span class="left-span">
+				<label for="female">Gender: </label>
+			</span>
+			<span class="right-span">
+				<input type="radio" name="Gender" value="Female" id="female">Female
+				<input type="radio" name="Gender" value="Male" id="male">Male
+			</span>
+		</div>
+		<div>
+			<span class="left-span">
+				<label for="day">DOB: </label>
+			</span>
+			<span class="right-span">
+				<select name="Day" id="day">
+					<option value=" ">Date</option>
+					<option value="01">01</option>
+					<option value="02">02</option>
+					<option value="03">03</option>
+					<option value="04">04</option>
+					<option value="05">05</option>
+					<option value="06">06</option>
+					<option value="07">07</option>
+					<option value="08">08</option>
+					<option value="09">09</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+				</select>
+				<select name="Month" id="month">
+					<option value=" ">Month</option>
+					<option value="January">January</option>
+					<option value="February">February</option>
+					<option value="March">March</option>
+					<option value="April">April</option>
+					<option value="May">May</option>
+					<option value="June">June</option>
+					<option value="July">July</option>
+					<option value="August">August</option>
+					<option value="September">September</option>
+					<option value="October">October</option>
+					<option value="November">November</option>
+					<option value="December">December</option>
+				</select>
+				<select name="Year" id="year">
+					<option value=" ">Year</option>
+					<option value="2000">2000</option>
+					<option value="2001">2001</option>
+					<option value="2002">2002</option>
+					<option value="2003">2003</option>
+					<option value="2004">2004</option>
+					<option value="2005">2005</option>
+					<option value="2006">2006</option>
+					<option value="2007">2007</option>
+					<option value="2008">2008</option>
+					<option value="2009">2009</option>
+					<option value="2010">2010</option>
+					<option value="2011">2011</option>
+					<option value="2012">2012</option>
+					<option value="2013">2013</option>
+					<option value="2014">2014</option>
+					<option value="2015">2015</option>
+					<option value="2016">2016</option>
+					<option value="2017">2017</option>
+					<option value="2018">2018</option>
+					<option value="2019">2019</option>
+					<option value="2020">2020</option>
+					<option value="2021">2021</option>
+					<option value="2022">2022</option>
+				</select>
+			</span>
+		</div>
+		<div>
+			<span class="left-span">
+				<label for="FavouriteFruit">Favourite Fruit: </label>
+			</span>
+			<span class="right-span">
+				<select multiple id="FavouriteFruit">
+					<option name="fruits" value=" &#127820;Banana">&#127820;Banana</option>
+					<option name="fruits" value=" &#129389;Mango">&#129389;Mango</option>
+					<option name="fruits" value=" &#127817;Watermelon">&#127817;Watermelon</option>
+					<option name="fruits" value=" &#127815;Grapes">&#127815;Grapes</option>
+				</select>
+			</span>
+		</div>
+		<div>
+			<span class="left-span">
+				<label for="FavouriteFood">Favourite Food: </label>
+			</span>
+			<span class="right-span">
+				<input type="checkbox" name="food" value=" &#127828;Hamburger" id="FavouriteFood">&#127828;Hamburger
+				<input type="checkbox" name="food" value=" &#127829;Pizza">&#127829;Pizza
+				<input type="checkbox" name="food" value=" &#129386;Sandwich">&#129386;Sandwich
+			</span>
+		</div>
+		<div>
+			<span class="left-span">
+				<label for="suggestion">Few Words: </label>
+			</span>
+			<span class="right-span">
+				<textarea name="feedback" id="suggestion"></textarea>
+			</span>
+		</div>
+		<div>
+			<input type="submit" value="Submit my feedback">
+		</div>
+	</form>
+
+	<div id="Output-form-container">
+	</div>
+	<script>
+		function CreateRowDiv(text, inputdata) {
+
+			// Create Row block (Div)
+			const rowdiv = document.createElement("div");
+
+			// Create Left Span, also assign class name
+			const leftspan = document.createElement("span");
+			leftspan.className = "left-span";
+			leftspan.innerHTML = text;
+
+			// Create Right Span, also assign class name
+			const rightspan = document.createElement("span");
+			rightspan.className = "right-span";
+			rightspan.innerHTML = inputdata;
+
+			// Append Left Span and Right Span into Row Div
+			rowdiv.append(leftspan);
+			rowdiv.append(rightspan);
+
+			// Now Return the Row div
+			return rowdiv;
+
+		};
+		function CreateOutputFormBlock(numberOfBlocks) {
+			// Create Output Form block (Div)
+			const blockdiv = document.createElement("div");
+			blockdiv.className = "block-div";
+
+			// assign class (0,1..) to each form block  
+			blockdiv.classList.add(numberOfBlocks);
+
+			// Create Edit and Delete Span
+			const EditDeleteSpan = document.createElement("span");
+			EditDeleteSpan.className = "edit-delete-span";
+
+			// Create a tag for edit, assign class name and add inner HTML 
+			const editAnchor = document.createElement("a");
+			editAnchor.className = "edit-anchor";
+			editAnchor.innerHTML = "✎ Edit";
+			editAnchor.href = "#";
+
+			// Create a tag for Delete, assign class name and add inner HTML
+			const deleteAnchor = document.createElement("a");
+			deleteAnchor.className = "delete-anchor";
+			deleteAnchor.innerHTML = "🗑️ Delete ";
+			deleteAnchor.href = "#";
+
+			// Now append Edit Anchor and Delete Anchor in EditDeleteSpan
+			EditDeleteSpan.append(editAnchor);
+			EditDeleteSpan.append(deleteAnchor);
+
+			// Now append the EditDeleteSpan in blockdiv
+			blockdiv.append(EditDeleteSpan);
+
+			// Now Create Row div for each row (leftSpan with text and rightSpan with Input value) by using function CreateRow()
+			// fullname Row
+			let fullname = document.getElementById("Name").value;
+			const FullNameRow = CreateRowDiv("Name: ", fullname);
+
+			// Gender Row 
+			let gender = document.forms["form"].Gender.value;
+			const GenderRow = CreateRowDiv("Gender: ", gender);
+
+			// DOB Row 
+			let day = document.getElementById("day").value;
+			let month = document.getElementById("month").value;
+			let year = document.getElementById("year").value;
+			let dob = day + " " + month + " " + year;
+			const DobRow = CreateRowDiv("DOB: ", dob);
+
+			// Favourite Fruit Row
+			let fruitslist = [];
+			let fruits = document.getElementsByName("fruits");
+			for (let i = 0; i < fruits.length; i++) {
+				if (fruits[i].selected) {
+					fruitslist.push(fruits[i].value);
+				}
+			}
+			const fruitsRow = CreateRowDiv("Favourite Fruit: ", fruitslist);
+
+			// Favourite Food Row
+			let foodlist = [];
+			let food = document.getElementsByName("food");
+			for (let i = 0; i < food.length; i++) {
+				if (food[i].checked) {
+					foodlist.push(food[i].value);
+				}
+			}
+			const foodRow = CreateRowDiv("Favourite Food: ", foodlist);
+
+			// Few Words Row 
+			let fewwords = document.getElementById("suggestion").value;
+			const FewWordsRow = CreateRowDiv("Few Words: ", fewwords);
+
+			// Now Append All Rows into Output Form Block (blockdiv)
+			blockdiv.append(FullNameRow);
+			blockdiv.append(GenderRow);
+			blockdiv.append(DobRow);
+			blockdiv.append(fruitsRow);
+			blockdiv.append(foodRow);
+			blockdiv.append(FewWordsRow);
+
+			// Now Append Output Form Block into Output-form-container
+			document.getElementById("Output-form-container").append(blockdiv);
+
+		};
+
+		function UpdateNewValues() {
+			let WhichBlock = document.forms[0].elements.whichBlock.value;
+
+			// Update Name
+			document.getElementsByClassName(WhichBlock)[0].children[1].children[1].innerHTML = document.forms[0].Name.value;
+
+			// Update Gender
+			document.getElementsByClassName(WhichBlock)[0].children[2].children[1].innerHTML = document.forms[0].Gender.value;
+
+			// Update DOB
+			let day = document.getElementById("day").value;
+			let month = document.getElementById("month").value;
+			let year = document.getElementById("year").value;
+			let dob = day + " " + month + " " + year;
+			document.getElementsByClassName(WhichBlock)[0].children[3].children[1].innerHTML = dob;
+
+			// Update Favourite Fruit
+			let fruitslist = [];
+			let fruits = document.getElementsByName("fruits");
+			for (let i = 0; i < fruits.length; i++) {
+				if (fruits[i].selected) {
+					fruitslist.push(fruits[i].value);
+				}
+			}
+			document.getElementsByClassName(WhichBlock)[0].children[4].children[1].innerHTML = fruitslist;
+
+			// Update Favourite Food
+			let foodlist = [];
+			let food = document.getElementsByName("food");
+			for (let i = 0; i < food.length; i++) {
+				if (food[i].checked) {
+					foodlist.push(food[i].value);
+				}
+			}
+			document.getElementsByClassName(WhichBlock)[0].children[5].children[1].innerHTML = foodlist;
+
+			// Update Few Words
+			document.getElementsByClassName(WhichBlock)[0].children[6].children[1].innerHTML = document.getElementById("suggestion").value;
+
+		};
+
+		function PrintInputdata() {
+			// It will prevent the default behaviour after submission
+			event.preventDefault();
+
+			// *************************************** SUBMIT THE SAME FORM WITH UPDATED VALUES ***************************************************************           	
+
+			if (document.forms[0].elements.whichBlock.value !== "") {
+
+				// Put the New Modified Values into the block which was selected to be Edited
+				UpdateNewValues();
+
+				// To reset the value back to default
+				document.forms[0].elements.whichBlock.value = "";
+			}
+
+			// ************************************** SUBMIT THE FORM FOR THE FIRST SO CREATE NEW BLOCK  ******************************************************		
+
+			else {
+
+				// Define a value numberofblocks and take it initial value from form, and incremnet it by 1
+				const numberOfBlocks = parseInt(document.forms[0].elements.numberOfBlocks.value);
+				document.forms[0].elements.numberOfBlocks.value = numberOfBlocks + 1;
+
+				// Create Output Form Block and send numberofblocks as parameter
+				CreateOutputFormBlock(numberOfBlocks);
+			}
+
+
+			// To reset the Form After Submission
+			document.forms["form"].reset();
+		};
+
+		function DeleteOutputFormBlock() {
+			// It will Prevent the default behaviour after click
+			event.preventDefault();
+
+			// Now after click, select its parent element i.e block-div and Delete using Remove()
+			if (event.target.className === "delete-anchor") {
+				event.target.parentElement.parentElement.remove();
+			}
+
+		};
+
+		function EditSelectedBlock(whichBlock) {
+
+			// Now Select values from this block and send or popped up in input form so that user can Input
+			// Select  and store the block to be edited
+			let SelectedBlock = event.target.parentElement.parentElement;
+
+			// Pop Name to form
+			let EditName = SelectedBlock.children[1].children[1].innerHTML;
+			form.elements["Name"].value = EditName;
+
+			// Pop Gender to form
+			if (SelectedBlock.children[2].children[1].innerHTML === "Male") {
+				document.getElementById("male").checked = true;
+			}
+			else if (SelectedBlock.children[2].children[1].innerHTML === "Female") {
+				document.getElementById("female").checked = true;
+			}
+
+			// Pop DOB to form
+			let date = SelectedBlock.children[3].children[1].innerText;
+			let dateList = date.split(" ");
+			document.getElementById("day").value = dateList[0];
+			document.getElementById("month").value = dateList[1];
+			document.getElementById("year").value = dateList[2];
+
+			// Pop Favourite Fruits to Form
+			let fruits = SelectedBlock.children[4].children[1].innerText;
+			let fruitList = fruits.split(",");
+			let FruitItemAvailable = document.getElementsByName("fruits");
+
+			for (let i = 0; i < FruitItemAvailable.length; i++) {
+				if (fruitList.includes(FruitItemAvailable[i].value)) {
+					FruitItemAvailable[i].selected = true;
+				};
+			};
+
+			// Pop Favourite Food to Form
+			let foods = SelectedBlock.children[5].children[1].innerText;
+			let foodList = foods.split(",");
+			let FoodItemAvailable = document.getElementsByName("food");
+			for (let i = 0; i < FoodItemAvailable.length; i++) {
+				if (foodList.includes(FoodItemAvailable[i].value)) {
+					FoodItemAvailable[i].checked = true;
+				};
+			};
+
+			// Pop Few Words to Form
+			let EditFeedback = SelectedBlock.children[6].children[1].innerText;
+			form.elements["feedback"].value = EditFeedback;
+
+		};
+		function EditOutputFormBlock() {
+			// It will Prevent the default behaviour after click
+			event.preventDefault();
+
+			// Now after click, select its parent element i.e block-div and Call Edit Function
+			if (event.target.className === "edit-anchor") {
+
+				// define variable whichblock, it will have the value that which block user want to edit
+				const whichBlock = event.target.parentElement.parentElement.classList[1];
+				document.forms[0].elements.whichBlock.value = whichBlock;
+
+				// Now edit the selected block, call the function and pass whichblock value as parameter 
+				EditSelectedBlock(whichBlock);
+			}
+		};
+
+		//////////////////////////////// Select Form and add Event Listener to Submit form and Print Data On Screen ///////////////////////////////////////////////
+
+		let FormData = document.forms["form"];
+		FormData.addEventListener("submit", PrintInputdata);
+
+		/////////////////////////////// Select Parent Container i.e Output-form-container And Add Event listener to Delete that Output Form Block /////////////////
+
+		let ParentContainer = document.getElementById("Output-form-container");
+		ParentContainer.addEventListener("click", DeleteOutputFormBlock);
+
+		/////////////////////////////// Select Parent Container i.e Output-form-container And Add Event listener to Edit that Output Form Block ///////////////////
+
+		ParentContainer.addEventListener("click", EditOutputFormBlock);     	
+	</script>
+</body>
+
+</html>

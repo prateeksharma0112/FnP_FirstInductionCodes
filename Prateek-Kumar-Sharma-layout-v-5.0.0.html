@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Prateek Kumar Sharma" />
+	<meta name="keywords" content="Layout, Prateek, CSS, Grid, flexboxes, DOM" />
+	<meta name="description" content="This is a sample Layout just to learn about Flexboxes and grid" />
+	<meta name="revised" content="Fun with CSS" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Prateek-sharma-Layout</title>
+	<style>
+		.main-body {
+			background-color: blue;
+		}
+
+		.head {
+			background-color: grey;
+			height: 100px;
+			border: 2px solid black;
+			border-radius: 0.25cm;
+
+		}
+
+		.main {
+			background-color: pink;
+			height: 700px;
+			border: 2px solid black;
+			border-radius: 0.25cm;
+			display: flex;
+
+		}
+
+		.foot {
+			background-color: red;
+			height: 70px;
+			border: 2px solid black;
+			border-radius: 0.25cm;
+		}
+
+		.head-div {
+			padding: 30px;
+			border: 1px solid black;
+			display: inline-block;
+			width: 60px;
+			margin: 6px 0px 6px 40px;
+			border-radius: 0.15cm;
+			font-family: "Gill Sans", sans-serif;
+			font-size: 20px;
+			background-color: Brown;
+
+		}
+
+		.foot {
+
+			font-family: "Gill Sans", sans-serif;
+			font-size: 50px;
+		}
+
+		.left-div {
+			display: flex;
+			width: 20%;
+			height: 700px;
+			background-color: powderblue;
+			justify-content: space-evenly;
+			align-items: center;
+			font-family: "Gill Sans", sans-serif;
+			font-size: 30px;
+		}
+
+		.right-div {
+			display: flex;
+			width: 100%;
+			background-color: green;
+			gap: 20px;
+			flex-wrap: wrap;
+			justify-content: space-around;
+
+
+		}
+
+		.banner {
+			display: flex;
+			height: 300px;
+			width: 45%;
+			background-color: orange;
+			border: 2px solid black;
+			align-items: center;
+			justify-content: center;
+			font-family: "Gill Sans", sans-serif;
+			font-size: 30px;
+
+
+		}
+
+		.block {
+			display: flex;
+			height: 200px;
+			width: 30%;
+			background-color: yellow;
+			border: 2px solid black;
+			align-items: center;
+			justify-content: center;
+			font-family: "Gill Sans", sans-serif;
+			font-size: 30px;
+
+		}
+	</style>
+</head>
+
+<body class="main-body">
+	<header class="head">
+		<div class="head-div">LOGO</div>
+	</header>
+	<main class="main">
+		<div class="left-div">Left Bar</div>
+		<div class="right-div">
+			<div class="banner">Banner1</div>
+			<div class="banner">Banner2</div>
+			<div class="block">Block1</div>
+			<div class="block">Block2</div>
+			<div class="block">Block3<div>
+				</div>
+	</main>
+	<footer class="foot">Footer</footer>
+</body>
+
+</html>
